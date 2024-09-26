@@ -22,7 +22,10 @@ public class AudioMgr : MonoBehaviour
         if (preIdx != curIdx)
         {
             preIdx = curIdx;
-            PlayFixedAudio(audios, curIdx);
+            if (curIdx >= 0)
+            {
+                PlayFixedAudio(audios, curIdx);
+            }
         }
     }
     // idx의 Audio resource가 null 이 아니라면 

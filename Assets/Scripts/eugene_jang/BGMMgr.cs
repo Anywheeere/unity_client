@@ -22,7 +22,7 @@ public class BGMMgr : MonoBehaviour
         if (preIdx != curIdx)
         {
             preIdx = curIdx;
-            if (curIdx < 10)
+            if (curIdx >= 0 && curIdx < 10)
             { 
                 PlayFixedAudio(audios, curIdx);
             }

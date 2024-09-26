@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class PlayerVideoMgr : MonoBehaviourPunCallbacks
 {
     // 1st, 2nd, 3rd 플레이어의 RawImage (각 플레이어의 비디오 표시)
-    public RawImage firstPlayerVideo;
-    public RawImage secondPlayerVideo;
-    public RawImage thirdPlayerVideo;
+    //public RawImage firstPlayerVideo;
+    //public RawImage secondPlayerVideo;
+    //public RawImage thirdPlayerVideo;
 
     public RawImage [] playerVideo;
 
@@ -24,9 +24,9 @@ public class PlayerVideoMgr : MonoBehaviourPunCallbacks
     void Start()
     {
         // 처음에는 모든 비디오 비활성화
-        firstPlayerVideo.enabled = false;
-        secondPlayerVideo.enabled = false;
-        thirdPlayerVideo.enabled = false;
+        //firstPlayerVideo.enabled = false;
+        //secondPlayerVideo.enabled = false;
+        //thirdPlayerVideo.enabled = false;
 
         // 자신이 로컬 플레이어라면 PhotonVoiceView 할당
         AssignVoiceViewForPlayer(PhotonNetwork.LocalPlayer);
