@@ -46,11 +46,11 @@ public class SphereManager : MonoBehaviour
             // 코루틴을 시작하고 방향을 설정
             if (isIncreasing)
             {
-                StartCoroutine(ChangeShaderValue(0f, 0.6f)); // 0에서 1로 증가
+                StartCoroutine(ChangeShaderValue(0f, 1f)); // 0에서 1로 증가
             }
             else
             {
-                StartCoroutine(ChangeShaderValue(0.6f, 0f)); // 1에서 0으로 감소
+                StartCoroutine(ChangeShaderValue(1f, 0f)); // 1에서 0으로 감소
             }
 
             // 방향을 반전
