@@ -36,10 +36,11 @@ public class BGMMgr : MonoBehaviour
 
     public void PlayFixedAudio(AudioClip[] clips, int idx)
     {
-
+        Debug.Log("if 문 직전");
         if (audioSource != null)
         {
             AudioSource[] audioSources = GetComponents<AudioSource>();
+            Debug.Log("destroy 되기 직전...두근두근");
             foreach (AudioSource audioSource in audioSources)
             {
                 Destroy(audioSource);

@@ -60,6 +60,7 @@ public class BetaDocentMgr : MonoBehaviour
 
     void Start()
     {
+        //idx = 33;
         bgms = bgmBox.GetComponent<AudioMgr>();
         fDocents = docentBox.GetComponent<AudioMgr>();
     }
