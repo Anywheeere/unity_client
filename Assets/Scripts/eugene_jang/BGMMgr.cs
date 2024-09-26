@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioMgr : MonoBehaviour
+public class BGMMgr : MonoBehaviour
 {
-    
+
     public AudioSource audioSource;
 
     public int preIdx;
@@ -12,7 +12,7 @@ public class AudioMgr : MonoBehaviour
     public AudioClip[] audios = new AudioClip[33];
     void Start()
     {
-        
+        audioSource.volume = 0.3f;
     }
 
     void Update()
@@ -22,7 +22,10 @@ public class AudioMgr : MonoBehaviour
         if (preIdx != curIdx)
         {
             preIdx = curIdx;
-            PlayFixedAudio(audios, curIdx);
+            if (curIdx < 10)
+            { 
+                PlayFixedAudio(audios, curIdx);
+            }
         }
     }
     // idx의 Audio resource가 null 이 아니라면 
@@ -33,7 +36,7 @@ public class AudioMgr : MonoBehaviour
     public void PlayFixedAudio(AudioClip[] clips, int idx)
     {
         audioSource.Stop();
-
+        audioSource.clip = clips[idx];
         //if (audioSource != null)
         //{
         //    AudioSource[] audioSources = GetComponents<AudioSource>();
@@ -42,10 +45,10 @@ public class AudioMgr : MonoBehaviour
         //        Destroy(audioSource);
         //    }
         //    print("잘 자요");
-        //} 
+        //}
 
         //audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.clip = clips[idx];
+        //audioSource.clip = clips[idx];
         audioSource.Play();
     }
 

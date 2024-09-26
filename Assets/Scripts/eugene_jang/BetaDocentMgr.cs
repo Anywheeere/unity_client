@@ -11,7 +11,6 @@ public class BetaDocentMgr : MonoBehaviour
 {
     public static BetaDocentMgr Instance;
 
-
     public GameObject CesiumMap;
 
     public string url;
@@ -60,6 +59,7 @@ public class BetaDocentMgr : MonoBehaviour
 
     void Start()
     {
+        idx = 33;
         bgms = bgmBox.GetComponent<AudioMgr>();
         fDocents = docentBox.GetComponent<AudioMgr>();
     }

@@ -4277,8 +4277,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400584664}
-  - component: {fileID: 400584667}
   - component: {fileID: 400584666}
+  - component: {fileID: 400584665}
   m_Layer: 0
   m_Name: Bgm
   m_TagString: Untagged
@@ -4301,7 +4301,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1526446745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &400584666
+--- !u!82 &400584665
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4397,7 +4397,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &400584667
+--- !u!114 &400584666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4409,7 +4409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d10088de8d9ccb42b3cb4782b981116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 400584666}
+  audioSource: {fileID: 400584665}
   preIdx: 0
   audios:
   - {fileID: 8300000, guid: 5878ce8497dd5d344b8df88d913af010, type: 3}
