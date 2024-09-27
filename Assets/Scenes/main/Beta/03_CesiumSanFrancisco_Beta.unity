@@ -1484,8 +1484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e07c8a669463d7449b5da214cfd4c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashImage: {fileID: 2116013501}
-  dashCooldownTime: 5
+  dashCooldownImage: {fileID: 1694279982}
+  dashReadyImage: {fileID: 2116013501}
 --- !u!1 &1412293154
 GameObject:
   m_ObjectHideFlags: 0
