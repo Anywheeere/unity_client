@@ -1249,7 +1249,7 @@ MonoBehaviour:
   rawImage: {fileID: 61803535}
   videoPlayer: {fileID: 61803534}
   talkingSignal: {fileID: 546819005}
-  ts: {fileID: 0}
+  ts: {fileID: 546819010}
 --- !u!1 &81672768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3419,11 +3419,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1828482558}
+  m_Father: {fileID: 1662878458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_AnchoredPosition: {x: -0.000015258789, y: 226.99998}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366916098
@@ -5124,14 +5124,14 @@ RectTransform:
   m_GameObject: {fileID: 456141369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1226062703}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456141371
@@ -7330,11 +7330,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1662878458}
+  m_Father: {fileID: 1828482558}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_AnchoredPosition: {x: -0.000015258789, y: -226.99998}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806008507
@@ -8486,7 +8486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 776.1, y: 15.599976}
+  m_AnchoredPosition: {x: 763.8, y: 15.599976}
   m_SizeDelta: {x: 235.7, y: 669.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916071784
@@ -8650,7 +8650,7 @@ MonoBehaviour:
   rawImage: {fileID: 917950093}
   videoPlayer: {fileID: 917950092}
   talkingSignal: {fileID: 1828482557}
-  ts: {fileID: 0}
+  ts: {fileID: 1828482562}
 --- !u!1 &919825293
 GameObject:
   m_ObjectHideFlags: 0
@@ -12802,7 +12802,7 @@ MonoBehaviour:
   rawImage: {fileID: 1473371929}
   videoPlayer: {fileID: 1473371928}
   talkingSignal: {fileID: 1662878457}
-  ts: {fileID: 0}
+  ts: {fileID: 1662878462}
 --- !u!1 &1477785017
 GameObject:
   m_ObjectHideFlags: 0
@@ -14741,7 +14741,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 806008506}
+  - {fileID: 366916097}
   - {fileID: 1473371927}
   - {fileID: 1939536834}
   m_Father: {fileID: 916071783}
@@ -15206,7 +15206,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 366916097}
+  - {fileID: 806008506}
   - {fileID: 917950091}
   - {fileID: 811814679}
   m_Father: {fileID: 916071783}

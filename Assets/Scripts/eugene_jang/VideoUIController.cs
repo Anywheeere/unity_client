@@ -12,6 +12,7 @@ public class VideoUIController : MonoBehaviour
     public GameObject talkingSignal;
 
     public Outline ts; 
+
     void Start()
     {
         // 비디오 플레이어 준비 완료 시 이벤트 등록
@@ -47,13 +48,12 @@ public class VideoUIController : MonoBehaviour
         if (rawImage.IsActive())
         {
             ts.enabled = true;
-        } else if ( !rawImage.IsActive())
+        } 
+        
+        if ( !rawImage.IsActive())
         {
             ts.enabled = false;   
         }
         
     }
-
-    // RawImage가 활성화 되면 
-    // 이미지도 활성화 시킨다
 }
