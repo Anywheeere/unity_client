@@ -579,6 +579,8 @@ MonoBehaviour:
   dashDistance: 10
   dashDuration: 0.2
   dashCooldown: 5
+  canDash: 1
+  dashTimeLeft: 0
   cam: {fileID: 579320829346826087}
   lerpSpeed: 50
   lookPos: {fileID: 7229682697219100091}
@@ -606,6 +608,8 @@ MonoBehaviour:
   firePos: {fileID: 816938518169045626}
   skillCenter: {fileID: 4764770261473703218}
   isMyTurn: 0
+  canShoot: 1
+  cooldownTime: 10
 --- !u!114 &5695747022568991414
 MonoBehaviour:
   m_ObjectHideFlags: 0
