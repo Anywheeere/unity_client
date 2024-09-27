@@ -24,6 +24,9 @@ public class ExitScene : MonoBehaviour
         // B 키가 눌렸는지 확인
         if (Input.GetKeyDown(KeyCode.Escape) && PhotonNetwork.IsMasterClient)
         {
+            // 커서 고정 해제 및 커서 표시
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             // 모든 플레이어에게 씬 변경 요청
             if (photonView != null)
             {
