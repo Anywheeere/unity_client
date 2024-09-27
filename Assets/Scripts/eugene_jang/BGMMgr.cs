@@ -12,7 +12,7 @@ public class BGMMgr : MonoBehaviour
     public AudioClip[] audios = new AudioClip[33];
     void Start()
     {
-        audioSource.volume = 0.3f;
+        audioSource.volume = 0.2f;
     }
 
     void Update()

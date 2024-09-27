@@ -12,7 +12,7 @@ public class AudioMgr : MonoBehaviour
     public AudioClip[] audios = new AudioClip[33];
     void Start()
     {
-        
+        audioSource.volume = 0.5f;
     }
 
     void Update()

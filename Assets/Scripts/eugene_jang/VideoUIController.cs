@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using UnityEngine.Video;
 
 public class VideoUIController : MonoBehaviour
 {
     public RawImage rawImage;  // Raw Image를 통한 비디오 출력
     public VideoPlayer videoPlayer;  // Video Player 컴포넌트
+    public GameObject talkingSignal;
 
+    public Outline ts; 
     void Start()
     {
         // 비디오 플레이어 준비 완료 시 이벤트 등록
@@ -16,6 +19,8 @@ public class VideoUIController : MonoBehaviour
 
         // 비디오 준비 및 재생
         PrepareVideo();
+
+       ts = talkingSignal.GetComponent<Outline>();
     }
 
     void PrepareVideo()
@@ -38,5 +43,17 @@ public class VideoUIController : MonoBehaviour
         {
             rawImage.texture = videoPlayer.texture;
         }
+
+        if (rawImage.IsActive())
+        {
+            ts.enabled = true;
+        } else if ( !rawImage.IsActive())
+        {
+            ts.enabled = false;   
+        }
+        
     }
+
+    // RawImage가 활성화 되면 
+    // 이미지도 활성화 시킨다
 }
