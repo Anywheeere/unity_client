@@ -27,7 +27,7 @@ public class ExitScene : MonoBehaviour
             // 모든 플레이어에게 씬 변경 요청
             if (photonView != null)
             {
-                photonView.RPC("ChangeScene", RpcTarget.All, "CesiumGoogleMapsTiles_Beta");
+                photonView.RPC("ChangeScene", RpcTarget.All, "CesiumGoogleMapsTiles_Beta_X");
             }
         }
     }

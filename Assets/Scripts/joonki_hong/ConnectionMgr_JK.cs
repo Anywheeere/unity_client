@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class ConnectionMgr_JK : MonoBehaviourPunCallbacks
 {
+    public static string savedNickname;  // 입력된 닉네임을 저장할 변수
+
     // InputNickName
     public TMP_InputField inputNickName;
 
@@ -19,28 +21,9 @@ public class ConnectionMgr_JK : MonoBehaviourPunCallbacks
         inputNickName.onValueChanged.AddListener(OnValueChanged);
     }
 
-    void Update()
-    {
-        
-    }
-
     void OnValueChanged(string s)
     {
         btnConnect.interactable = s.Length > 0;
-
-        //// 만약에 s의 길이가 0보다 크면
-        //if (s.Length > 0)
-        //{
-        //    // 접속 버튼을 활성화
-        //    btnConnect.interactable = true;
-
-        //}
-        //// 그렇지 않으면(s의 길이가 0)
-        //else
-        //{
-        //    // 접속 버튼을 비활성화
-        //    btnConnect.interactable = false;
-        //}
     }
 
     public void OnClickConnect()
@@ -49,13 +32,16 @@ public class ConnectionMgr_JK : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    // 마스터 서버에 접속 성공하면 호출되는 함수 // MonoBehaviourPunCallbacks 상속이 필요하다.
     public override void OnConnectedToMaster()
     {
         base.OnConnectedToMaster();
 
         // 닉네임 설정
         PhotonNetwork.NickName = inputNickName.text;
+
+        // 닉네임 저장 (다른 씬에서 기억하기 위함)
+        savedNickname = inputNickName.text;
+
         // 로비씬으로 전환
         PhotonNetwork.LoadLevel("LobbyScene_Beta");
     }
