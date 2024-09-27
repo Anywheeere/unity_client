@@ -23,10 +23,10 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
     public float dashDistance = 10f;  // 대쉬 거리
     public float dashDuration = 0.2f; // 대쉬 시전 시간
     public float dashCooldown = 5f;   // 대쉬 쿨타임
-    private bool canDash = true;      // 대쉬 가능 여부
+    public bool canDash = true;      // 대쉬 가능 여부
     private bool isDashing = false;   // 대쉬 중인지 여부
     private Vector3 dashDirection;    // 대쉬 방향
-    private float dashTimeLeft;       // 남은 대쉬 시간
+    public float dashTimeLeft;       // 남은 대쉬 시간
 
     // 카메라 
     public GameObject cam;
@@ -169,7 +169,7 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
     }
 
     // 대쉬 이동 메서드
-    private void DashMove()
+    public void DashMove()
     {
         if (dashTimeLeft > 0)
         {
