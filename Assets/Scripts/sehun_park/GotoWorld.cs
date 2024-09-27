@@ -43,7 +43,7 @@ public class GotoWorld : MonoBehaviourPun
         {
             if (photonView != null)
             {
-                photonView.RPC("ChangeScene", RpcTarget.All, "CesiumGoogleMapsTiles_Beta_X");
+                photonView.RPC("ChangeScene", RpcTarget.All, "CesiumGoogleMapsTiles_Beta");
             }
         }
     }
