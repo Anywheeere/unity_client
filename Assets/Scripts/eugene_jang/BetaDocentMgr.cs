@@ -62,7 +62,7 @@ public class BetaDocentMgr : MonoBehaviour
     void Start()
     {
         idx = 33;
-
+        audioSource.volume = 0.5f;
     }
        
 
